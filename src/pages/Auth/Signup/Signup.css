@@ -1,0 +1,153 @@
+.signup{
+    align-items: center;
+    background-color:#FFFFFF;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    color: #1D2226;
+    flex-wrap:wrap;
+    
+  }
+
+  .signup{
+    width: 400px;
+  }
+
+  .title{
+    font-size: 36px;
+    height: fit-content;
+    margin-inline: 50px;
+  }
+
+  .form {
+    background-color: #F7F8F9;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    height:80vh;
+    width: 335px;
+  }
+  
+  .input-container {
+    height: 40px;
+    position: relative;
+    width: 100%;
+    margin: 20px 0px;
+  }
+  
+  .input {
+    background-color: #F7F8F9;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #1D2226;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+    border: 1px solid #CBCBCB;
+    z-index: 0;
+  }
+  
+  .cut {
+    border-radius: 6px;
+    height: 15px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+    z-index: 1;
+  }
+  
+  .cut-short {
+    width: 50px;
+  }
+  
+  .input:focus ~ .cut,
+  .input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+  }
+  
+  .placeholder {
+    color: #1D2226;
+    left: 20px;
+    line-height: 5px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+    font-size: 17px;
+  }
+  
+  .input:focus ~ .placeholder,
+  .input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+  }
+  
+  .input:focus ~ .placeholder {
+    color: #6C25FF;
+  }
+  
+  .submit {
+    background-color: #6C25FF;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .submit:active {
+    background-color: #06b;
+  }
+  
+  .radio-container{
+    margin-left: 10px;
+    font-size: large;
+  }
+
+  .radio{
+    height: 20px;
+    width: 20px;
+  }
+
+  input[type=radio]:checked {
+    border-color:  #6C25FF;
+    background-size: 80% 80%;
+  }
+
+  input[type=radio] {
+    --s: 1em;
+    --c: #6C25FF; 
+    
+    height: var(--s);
+    aspect-ratio: 1;
+    border: calc(var(--s)/8) solid #939393;
+    padding: calc(var(--s)/8);
+    background: 
+       radial-gradient(farthest-side,var(--c) 94%,#0000) 
+       50%/0 0 no-repeat content-box;
+    border-radius: 50%;
+    outline-offset: calc(var(--s)/10);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    font-size: inherit;
+    transition: .3s;
+  }
+
+  .radio-section{
+    display: flex;
+    gap: 4px;
+  }

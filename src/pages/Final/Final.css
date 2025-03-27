@@ -1,0 +1,48 @@
+.navbar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 10vh;
+}
+
+.navbar > h2 {
+  margin-left: 20px;
+}
+
+main {
+  position: absolute;
+  top: 10vh;
+  left: 0px;
+  padding: 20px;
+}
+
+.body {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.profile-icon {
+  margin-left: -15px;
+}
+
+.name-desc {
+  font-weight: 800;
+}
+
+.text{
+    text-wrap:break-word;
+    margin-inline: 5px;
+}
+.final{
+    width: 100vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .body{
+    gap: 10px;
+  }
+  main{
+    padding: 10px;
+  }
+}

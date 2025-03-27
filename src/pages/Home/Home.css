@@ -1,0 +1,64 @@
+.btn-create-account {
+  background-color: #6c25ff;
+  padding: 10px 74px;
+  border-radius: 5px;
+  border: 2px solid #6c25ff;
+  transition: all 0.4s ease-in;
+  margin: 5px;
+}
+
+.btn-create-account:hover {
+  background-color: #8a52fa;
+}
+
+.btn-already-register {
+  background-color: #cebafb;
+  padding: 10px 50px;
+  border-radius: 5px;
+  border: 2px solid #cebafb;
+  color: #3b3a3b;
+  transition: all 0.4s ease-in;
+  margin: 5px;
+}
+
+.btn-already-register:hover {
+  background-color: #9e71f9;
+  color: aliceblue;
+  border: 2px solid #9e71f9;
+}
+
+.btn-home {
+  font-size: large;
+}
+
+.home {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.home-desc {
+  font-size: larger;
+  text-wrap: break-word;
+}
+
+@media only screen and (max-width: 600px) {
+  .home {
+    position: absolute;
+    bottom: 5px;
+    margin: auto;
+  }
+
+  .btn-already-register {
+    width: 90vw;
+  }
+
+  .btn-create-account {
+    width: 90vw;
+  }
+
+  .headline{
+    text-align: start;
+    width: 70vw;
+    margin-left: 5px;
+  }
+}
